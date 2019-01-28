@@ -8,6 +8,9 @@
 # testing
 /coverage
 
+# private
+myid.txt
+
 # production
 /build
 
