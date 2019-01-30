@@ -9,12 +9,30 @@
 }
 
 .location-picker-container {
+  position: relative;
+}
+.location-tag-slides-container {
   overflow-x: hidden;
 }
 .location-tag-slides {
   position: relative;
   overflow: visible;
+  transition: transform ease-in-out 300ms;
 }
+.location-tag-slides-btn {
+  background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 1px 1px 1px;
+}
+.location-tag-slides-btn:focus {
+  outline: none;
+  box-shadow: 0 0 2px 2px #1c1c1c;
+}
+
 .location-tag-container {
   width: 25%;
   vertical-align: top;
@@ -29,6 +47,7 @@
   border-radius: 5px;
   display: grid;
   grid-template-columns: 96px auto;
+  overflow: hidden;
 }
 .location-image-container {
   width: 96px;
